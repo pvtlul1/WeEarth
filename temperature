@@ -17,12 +17,12 @@ async function weatherFn(cName) {
 			weatherShowFn(data);
 		} else {
 			alert('City not found. Please try again.');
+
 		}
 	} catch (error) {
 		console.error('Error fetching weather data:', error);
 	}
 }
-
 function weatherShowFn(data) {
 	$('#city-name').text(data.name);
 	$('#date').text(moment().
